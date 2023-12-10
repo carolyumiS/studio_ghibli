@@ -1,0 +1,256 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size:bold;
+    scroll-behavior: smooth;
+}
+
+/* TEMA PADRAO - INICIO */
+
+.tema_padrao header {
+    background-color: rgba(186, 213, 241, 0.7);
+}
+
+.tema_padrao .titulo_textos {
+    background-color: rgb(131, 198, 224);
+}
+
+.tema_padrao .item_textos {
+    background-color: rgba(110, 196, 228, 0.26);
+}
+
+.tema_padrao .links a {
+    background-color: rgb(131, 198, 224);
+}
+
+.tema_padrao .fundo1 {
+    background-image: url("../imagens/bg1.jpg");
+}
+
+.tema_padrao .botao_tema[value="padrao"] {
+    background-color:  #4caacc;
+}
+
+/* TEMA PADRAO - FIM */
+
+/* TEMA VERMELHO - INICIO */
+
+.tema_vermelho header {
+    background-color: rgba(241, 186, 186, 0.7);
+}
+
+.tema_vermelho .titulo_textos {
+    background-color: rgb(224, 131, 131);
+}
+
+.tema_vermelho .item_textos {
+    background-color: rgba(228, 110, 110, 0.26);
+}
+
+.tema_vermelho .links a {
+    background-color: rgb(224, 131, 131);
+}
+
+.tema_vermelho .fundo1 {
+    background-image: url(../imagens/bg2.jpg);
+}
+
+.tema_vermelho .botao_tema[value="vermelho"] {
+    background-color: rgb(209, 78, 78);
+}
+
+/* TEMA VERMELHO - FIM */
+
+header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgba(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+main {
+    position: relative;
+    height: 100%;
+}
+
+.fundo1 {
+    position:relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.botao_tema {
+    border-radius: 50%;
+    width: 20px;
+    border: none;
+    height: 20px;
+    background: #ffffffb0;
+    cursor: pointer;
+}
+
+.botoes_tema {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.fundo2 {
+    background-image: url("../imagens/nausicaa-do-vale-do-vento.png");
+}
+.fundo3 {
+    background-image: url("../imagens/viagem-chihiro.jpg");
+}
+.fundo2, .fundo3 {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc_img{
+    margin: 0;
+    /*media queryfont-size: ;*/
+}
+
+.titulao {
+    position: absolute;
+    font-family: 'PT Serif', serif;
+    left: 0;
+    right: 0;
+    top:40%;
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 5rem;
+    margin: auto;
+}
+
+h1 {
+    padding-top: 60px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}   
+
+.texto {
+    text-align: justify;
+    padding: 120px 25px;
+    z-index: -1;
+    font-size: larger;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+img {
+    padding: 20px;
+    width: 80%;
+}
+
+.titulo_textos {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-family:  'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+    }
+
+#textos {
+    width: 70%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.item_textos {
+    display: none;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a {
+    padding: 10px 20px; /*media query*/
+    border-radius: 10px;
+    text-decoration: none;
+    color: azure;
+    position: relative;
+    
+}
+
+@media (min-width: 576px){
+    .fundo2, .fundo3{
+        height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 20px 0px;
+    }
+    ul {
+        padding: 5px;
+    }
+    li {
+        width: 20%;
+        float: left;
+    }
+    a {
+        font-size: 1rem;
+    }
+     a:hover {
+        font-size: 1.25rem;
+        text-decoration: underline;
+    }
+
+    .fotos1 .container img {
+        width: 45%;
+    }
+
+    .fundo2, .fundo3 {
+        height: 500px;
+    }
+
+    .obras{
+        width: 20%;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+}
+
